@@ -4,9 +4,16 @@
     border: 1px solid #D1D1D1;
     border-radius: 12px;
     padding: 10px;
-    .img{
-        width: 100%;
+    width: 100%;
+    .img_card{
         border-radius: 12px;
+        object-fit: contain;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+    }
+    .card_title{
+        padding: 10px 0 5px;
     }
     .priceBlock{
         display: flex;
@@ -19,4 +26,7 @@
         font-size: 18px;
         color: $black;
     }
+}
+.wrapper > div {
+    position: unset !important;
 }

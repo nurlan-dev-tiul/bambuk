@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import Header from '../../componets/Header';
 import { BiShow, BiHeart, BiAlarm} from "react-icons/bi";
 import styles from '../../styles/Announcement.module.scss';
@@ -19,7 +20,13 @@ const Announcement: React.FC = () =>{
             <div className={styles.detail_block}>
                 <div className={styles.detail_count_info}>
                     <div className={styles.img_block}>
-                        <img className={styles.img} src='https://images.unsplash.com/photo-1630673429477-186308ef87d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80' />
+                        <Image 
+                            layout='responsive'
+                            width={600}
+                            height={395}
+                            src='https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg' 
+                            className={styles.img} 
+                        />
                     </div>
                     <h1 className={styles.detail_title}>Услуги сантехника</h1>
                     <div className={styles.detail_count}>
@@ -54,9 +61,27 @@ const Announcement: React.FC = () =>{
                     <div className={styles.share}>
                         <h4 className={styles.share_title}>Поделиться с друзьями</h4>
                         <div className={styles.share_img_block}>
-                            <img className={styles.share_icon} src="https://cdn.pixabay.com/photo/2017/01/10/04/09/bubbles-1968272_960_720.png" alt="" />
-                            <img className={styles.share_icon} src="https://cdn.pixabay.com/photo/2017/01/16/20/21/bubbles-1985148_960_720.png" alt="" />
-                            <img className={styles.share_icon} src="https://cdn.pixabay.com/photo/2017/01/08/08/01/bubbles-1962356_960_720.png" alt="" />
+                            <Image 
+                                className={styles.share_icon} 
+                                src="https://cdn.pixabay.com/photo/2017/01/10/04/09/bubbles-1968272_960_720.png" 
+                                alt="" 
+                                width={50}
+                                height={50}
+                            />
+                            <Image 
+                                className={styles.share_icon} 
+                                src="https://cdn.pixabay.com/photo/2017/01/16/20/21/bubbles-1985148_960_720.png" 
+                                width={50}
+                                height={50}
+                                alt="" 
+                            />
+                            <Image 
+                                className={styles.share_icon} 
+                                src="https://cdn.pixabay.com/photo/2017/01/08/08/01/bubbles-1962356_960_720.png" 
+                                width={50}
+                                height={50}
+                                alt="" 
+                            />
                         </div>
                     </div>
                 </div>
@@ -65,13 +90,22 @@ const Announcement: React.FC = () =>{
                     <div>
                         <div className={styles.user_info}>
                             <div className='d-flex align-items-center'>
-                                <img className={styles.user_img} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBgZbchuTiUtA3Egi1arN4BEQeoTaUtutQ8A&usqp=CAU" alt="User" />
-                                <span>Борис Гадунов</span> 
+                                <Image 
+                                    className={styles.user_img} 
+                                    src="https://cdn.pixabay.com/photo/2017/12/31/15/56/portrait-3052641_960_720.jpg" 
+                                    alt="User" 
+                                    width={40}
+                                    height={40}
+                                />
+                                <span className={styles.user_name}>Борис Гадунов</span> 
                             </div>
                             <Button onClick={clickPhoneBtn} color='green' size='middle'>{visiblePhone}</Button>
                         </div>
                         <div className={styles.maps}>
-                            <img className={styles.img} src="https://static-maps.yandex.ru/1.x/?api_key=01931952-3aef-4eba-951a-8afd26933ad6&theme=light&lang=ru_RU&size=520%2C440&l=map&spn=0.001958%2C0.020858&ll=74.581351%2C42.876917&lg=0&cr=0&pt=74.581396%2C42.876914%2Ccomma&signature=OnMxOkT8bjGz15pqd_ie57VC5wnqU9bjSy2M8nKObbk=" alt="" />
+                            {/* <img 
+                                className={styles.img} 
+                                src="https://cdn.pixabay.com/photo/2013/06/06/15/36/world-117174_960_720.png" 
+                            alt="" /> */}
                         </div>
                     </div>
                 </div>

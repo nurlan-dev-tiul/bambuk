@@ -13,11 +13,11 @@ class AppDocument extends Document {
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-        <title>Lalafo 2.0</title>  
+        <title>Lalafo</title>  
         </Head>
         <body>
           <Main />
-          <NextScript />
+          <NextScript /> 
         </body>
       </Html>
     )

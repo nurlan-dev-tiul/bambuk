@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+
 
 import styles from './Footer.module.scss';
 import FooterMenu from './FooterMenu';
