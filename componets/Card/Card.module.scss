@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.wrapper{
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 10px;
+    .img{
+        width: 100%;
+        border-radius: 12px;
+    }
+    .priceBlock{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .price{
+        font-weight: 600;
+        font-size: 18px;
+        color: $black;
+    }
+}

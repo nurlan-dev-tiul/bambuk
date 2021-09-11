@@ -1,0 +1,35 @@
+// ! Green Var 
+$green: #6A983C;
+$light-green: #F4F8EC;
+$hover-green: #4f6638;
+
+// ! Grey Var
+$gray: #575757;
+$light-grey: #F5F5F5;
+$hover-grey: #d1d1d1;
+
+// ! Black Var
+
+$black: #151515;
+
+// ! Green
+.color-text-green{
+    color: $green;
+}
+.color-body-green{
+    background-color: $green;
+}
+.color-body-light-green{
+    background-color: $light-green;
+}
+
+// ! Grey
+.color-text-grey{
+    color: $gray;
+}
+.color-body-grey{
+    background-color: $gray;
+}
+.color-body-light-grey{
+    background-color: $light-grey;
+}

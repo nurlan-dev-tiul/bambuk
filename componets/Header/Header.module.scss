@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #C4C4C4;
+    margin: 0px 15px;
+
+    .header_info{
+        display: flex;
+        align-items: center;
+    }
+    .contact_icon{
+        margin-right: 10px;
+    }
+    .header_phone{
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    .top_menu_list{
+        display: flex;
+        align-items: center;
+    }
+    .top_menu_link{
+        margin-left: 15px;
+    }
+    .top_menu_item{
+        cursor: pointer;
+        font-size: 14px;
+        color: $green;
+    }
+}
+.header_middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    margin: 0px 15px;
+    .auth_block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .auth_link{
+        font-size: 14px;
+    }
+    .auth_icon{
+        font-size: 16px;
+        margin-right: 8px;
+    }
+}

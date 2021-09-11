@@ -1,0 +1,31 @@
+.icon{
+    margin-left: 4px;
+    margin-right: -3px;
+}
+
+.icon-btn{
+    margin-right: -5px;
+    margin-top: 2px;
+    font-weight: 600;
+}
+.hover-icon{
+    &:hover{
+        svg{
+            color: #fff;
+        }
+    }
+}
+
+.color-green{
+    color: #6A983C;
+}
+
+.color-white{
+    color: white;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    margin-left: -5px;
+    margin-right: 5px;
+}

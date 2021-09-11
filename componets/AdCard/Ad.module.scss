@@ -1,0 +1,14 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+
+    .ad_img{
+        width: 100%;
+    }
+    .title_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

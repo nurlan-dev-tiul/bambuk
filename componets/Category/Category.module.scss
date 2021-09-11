@@ -1,0 +1,15 @@
+.wrapper{
+    padding: 10px;
+    .cat_list{
+        list-style: none;
+    }
+    .cat_link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+    }
+    .item{
+        color: #151515;
+    }
+}

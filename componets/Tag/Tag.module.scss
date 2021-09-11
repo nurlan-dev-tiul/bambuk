@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.tag{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 12px;
+}
+.greenBody{
+    background-color: $light-green;
+    color: $green;
+}
+
+.greyBody{
+    background-color: $light-grey;
+    color: $black;
+}
+
+.whiteBody{
+    background-color: transparent;
+    color: $black;
+    border: 1px solid $light-grey;
+}
+
+.small{
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.middle{
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
