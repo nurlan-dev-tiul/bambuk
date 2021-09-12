@@ -102,10 +102,44 @@ const Announcement: React.FC = () =>{
                             <Button onClick={clickPhoneBtn} color='green' size='middle'>{visiblePhone}</Button>
                         </div>
                         <div className={styles.maps}>
+                            <h1>Здесь будет контейнер для google maps</h1>
                             {/* <img 
                                 className={styles.img} 
                                 src="https://cdn.pixabay.com/photo/2013/06/06/15/36/world-117174_960_720.png" 
                             alt="" /> */}
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.comment_block}>
+                    <div className={styles.comment_form}>
+                        <h4 className={styles.form_title}>Написать комментарий</h4>
+                        <textarea className={styles.textarea} name=""  id="" placeholder='Ваш комментарии'></textarea>
+                        <Button color='green' size='middle' >Добавить комментарии</Button>
+                    </div>
+                    <div>
+                        <h4 className={styles.comment_item_title}>127 Комментариев</h4>
+                        <div className={styles.comment_item}>
+                            <div className={styles.comment_item_user}>
+                                <div className='d-flex align-items-center'>
+                                    <Image 
+                                        className={styles.user_img} 
+                                        src="https://cdn.pixabay.com/photo/2017/12/31/15/56/portrait-3052641_960_720.jpg" 
+                                        alt="User" 
+                                        width={40}
+                                        height={40}
+                                    />
+                                    <div className='d-flex align-items-center justify-content-between w-100vh'>
+                                        <p className={styles.comment_user_name}>Борис Гадунов</p> 
+                                        <p className={styles.comment_item_date}>22.04.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.comment_item_text}>
+                                <p>Электрик электрика электрик электрик бишкек 24/7 Электромонтаж бишкек Электрика 
+                                    Услуги электрик Электрик круглосуточно Электромонтаж бишкек Электрика 
+                                    Услуги электрик Электрик круглосуточно</p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
